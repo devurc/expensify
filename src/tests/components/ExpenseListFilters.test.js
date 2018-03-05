@@ -40,23 +40,22 @@ test('should handle text change', () => {
   expect(setTextFilter).toHaveBeenLastCalledWith(value);
 });
 
-// test('should sort by date', () => {
-//   const value = 'date';
-//   wrapper.setProps({ filters: altFilters });
-  // wrapper.find('select').simulate('change', { 
-  //   target: { value }
-  // });
-  // expect(sortByDate).toHaveBeenCalled();
-  // expect(wrapper.find('select').prop('value')).toBe(value);
-// });
+test('should sort by date', () => {
+  const value = 'date';
+  wrapper.setProps({ filters: altFilters });
+  wrapper.find('select').simulate('change', { 
+    target: { value }
+  });
+  expect(sortByDate).toHaveBeenCalled();
+});
 
-// test('should sort by amount', () => {
-//   const value = 'amount';
-//   wrapper.find('select').simulate('change', {
-//     target: { value }
-//   });
-//   expect(sortByAmount).toHaveBeenCalled();
-// });
+test('should sort by amount', () => {
+  const value = 'amount';
+  wrapper.find('select').simulate('change', {
+    target: { value }
+  });
+  expect(sortByAmount).toHaveBeenCalled();
+});
 
 test('should handle date changes', () => {
   const startDate = moment(0).add(15, 'days');

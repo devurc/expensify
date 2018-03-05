@@ -8,6 +8,7 @@ exports[`should render ExpenseListFilters with alt data filters correctly 1`] = 
     value="bills"
   />
   <select
+    onChange={[Function]}
     value="amount"
   >
     <option
@@ -118,6 +119,7 @@ exports[`should render ExpenseListFilters with filters correctly 1`] = `
     value=""
   />
   <select
+    onChange={[Function]}
     value="date"
   >
     <option

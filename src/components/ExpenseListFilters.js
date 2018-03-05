@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import 'react-dates/initialize';
 import { DateRangePicker } from 'react-dates';
 import { setTextFilter, sortByDate, sortByAmount, setStartDate, setEndDate } from '../actions/filters';
-import { start } from 'repl';
+//import { start } from 'repl';
 
 export class ExpenseListFilters extends React.Component {
   state = {
@@ -35,9 +35,11 @@ export class ExpenseListFilters extends React.Component {
           onChange={this.onTextChange}
           />
         <select 
-          value={this.props.filters.sortBy}>
+          value={this.props.filters.sortBy}
+          onChange={this.onSortChange}>
           <option value="date">Date</option>
           <option value="amount">Amount</option>
+          
         </select>
         <DateRangePicker
           startDateId="startDate"
