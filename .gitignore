@@ -1,6 +1,4 @@
 node_modules/*
 package-lock.json
-public/styles.css
-public/styles.css.map
-public/bundle.js
-public/bundle.js.map
+public/dist/
+stc/playground/
